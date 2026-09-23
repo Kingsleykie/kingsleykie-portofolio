@@ -426,7 +426,7 @@ export default function Home() {
         <section id="experience" className={styles.section}>
           <div className={styles.container}>
             <div className={styles.sectionHeader}>
-              <span className={styles.sectionBadge}>Extracurricular &amp; Impact</span>
+              <span className={styles.sectionBadge}>Organization &amp; Activities</span>
               <h2 className={styles.sectionTitle}>Leadership &amp; Experience</h2>
               <div className={styles.sectionUnderline}></div>
             </div>
