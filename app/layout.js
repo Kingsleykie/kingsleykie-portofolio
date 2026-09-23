@@ -9,12 +9,11 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: 'Kingsley Kie | Web Developer & Front-end Developer Intern',
+  title: 'Kingsley Kie | Front-end Developer',
   description:
     'Passionate IT student specializing in Front-end Web Development with expertise in HTML, CSS, JavaScript, and modern frameworks. Eager to leverage coding skills to build real-world web applications.',
   keywords: [
     'Kingsley Kie',
-    'Web Developer',
     'Front-end Developer',
     'React',
     'JavaScript',
