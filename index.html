@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kingsley Kie | Portfolio</title>
+  
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. HEADER / NAVBAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#home" class="nav-logo">
+        Kingsley Kie<span>.</span>
+      </a>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav Links -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Project</a></li>
+          <li><a href="#organization" class="nav-link">Organization</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="hero-greeting">Welcome to my portfolio</p>
+          <h1 class="hero-title">Hello, I'm <span class="highlight">Kingsley Kie</span></h1>
+          <h2 class="hero-subtitle">Front-end Web Developer &amp; UI Designer</h2>
+          <p class="hero-desc">
+            3rd-year Computer Science student passionate about building efficient digital solutions and solving complex technical problems. Proficient in UI design and front-end web development, backed by proven organizational leadership and a strong drive to excel in a collaborative IT environment.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              See Projects
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+            <a href="#" class="btn btn-secondary" onclick="event.preventDefault(); alert('CV Download link will be available soon!');">
+              Download CV
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-image-card">
+            <!-- Professional SVG Profile Placeholder -->
+            <img 
+              class="hero-img" 
+              src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 480' width='100%' height='100%'><rect width='100%' height='100%' fill='%23eff6ff'/><circle cx='200' cy='160' r='75' fill='%2393c5fd'/><path d='M90 390 C90 280, 310 280, 310 390 Z' fill='%2360a5fa'/><circle cx='200' cy='155' r='55' fill='%23dbeafe'/><path d='M135 390 C135 305, 265 305, 265 390 Z' fill='%233b82f6'/><text x='50%25' y='435' font-family='sans-serif' font-size='16' font-weight='bold' fill='%231e3a8a' text-anchor='middle'>Kingsley Kie</text></svg>" 
+              alt="Profile Photo of Kingsley Kie" 
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. ABOUT ME
+       ========================================================================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Introduction</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-card">
+        <p class="about-text">
+          Passionate IT student specializing in Front-end Web Development with expertise in HTML, CSS, JavaScript, and modern UI frameworks. Eager to leverage my coding skills, adaptability, and eye for detail to contribute to real-world projects as a Front-end Developer.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. SKILLS
+       ========================================================================== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Column 1: Hard Skills -->
+        <div class="skills-col">
+          <div class="skills-col-header">
+            <div class="skills-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="skills-col-title">Hard Skills</h3>
+          </div>
+          <div class="skills-badges">
+            <span class="skill-badge"><span class="skill-badge-dot"></span>HTML5</span>
+            <span class="skill-badge"><span class="skill-badge-dot"></span>CSS3</span>
+            <span class="skill-badge"><span class="skill-badge-dot"></span>JavaScript</span>
+            <span class="skill-badge"><span class="skill-badge-dot"></span>Figma</span>
+            <span class="skill-badge"><span class="skill-badge-dot"></span>MySQL</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Soft Skills -->
+        <div class="skills-col">
+          <div class="skills-col-header">
+            <div class="skills-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="skills-col-title">Soft Skills</h3>
+          </div>
+          <div class="skills-badges">
+            <span class="skill-badge"><span class="skill-badge-dot"></span>Communication</span>
+            <span class="skill-badge"><span class="skill-badge-dot"></span>Teamwork</span>
+            <span class="skill-badge"><span class="skill-badge-dot"></span>Problem Solving</span>
+            <span class="skill-badge"><span class="skill-badge-dot"></span>Time Management</span>
+            <span class="skill-badge"><span class="skill-badge-dot"></span>Critical Thinking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. PROJECTS
+       ========================================================================== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Mr.Coffee -->
+        <article class="project-card">
+          <div class="project-img-holder">
+            <img 
+              class="project-img" 
+              src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 380' width='100%' height='100%'><rect width='100%' height='100%' fill='%23fef3c7'/><circle cx='300' cy='170' r='75' fill='%23fde68a'/><path d='M260 145 h80 v50 a40 40 0 0 1 -80 0 Z' fill='%23b45309'/><path d='M340 155 h18 a12 12 0 0 1 0 24 h-18' fill='none' stroke='%23b45309' stroke-width='6'/><path d='M250 215 h100 v10 a5 5 0 0 1 -5 5 h-90 a5 5 0 0 1 -5 -5 Z' fill='%2392400e'/><text x='50%25' y='285' font-family='sans-serif' font-size='22' font-weight='bold' fill='%2378350f' text-anchor='middle'>Mr.Coffee Platform</text></svg>" 
+              alt="Mr.Coffee Project Preview" 
+            />
+          </div>
+          <div class="project-content">
+            <span class="project-role">Front-end Developer</span>
+            <h3 class="project-title">Mr.Coffee</h3>
+            <p class="project-desc">
+              A responsive online coffee shop platform featuring an interactive homepage with top menus, ongoing promotions, a dedicated “About us” section, and a food ordering page. This system is built using standard web technologies including HTML5, CSS3, and JavaScript to optimize web performance and responsive.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: CyberLearn -->
+        <article class="project-card">
+          <div class="project-img-holder">
+            <img 
+              class="project-img" 
+              src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 380' width='100%' height='100%'><rect width='100%' height='100%' fill='%23e0e7ff'/><circle cx='300' cy='170' r='75' fill='%23c7d2fe'/><rect x='265' y='140' width='70' height='60' rx='10' fill='%234338ca'/><path d='M280 140 v-15 a20 20 0 0 1 40 0 v15' fill='none' stroke='%234338ca' stroke-width='8'/><circle cx='300' cy='170' r='6' fill='%23ffffff'/><text x='50%25' y='285' font-family='sans-serif' font-size='22' font-weight='bold' fill='%23312e81' text-anchor='middle'>CyberLearn UI/UX</text></svg>" 
+              alt="CyberLearn Project Preview" 
+            />
+          </div>
+          <div class="project-content">
+            <span class="project-role">System Analyst &amp; UI Designer</span>
+            <h3 class="project-title">CyberLearn</h3>
+            <p class="project-desc">
+              An gamified cybersecurity learning platform concepts through interactive lessons and structured progression.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Figma</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: CatchFit -->
+        <article class="project-card">
+          <div class="project-img-holder">
+            <img 
+              class="project-img" 
+              src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 380' width='100%' height='100%'><rect width='100%' height='100%' fill='%23ccfbf1'/><circle cx='300' cy='170' r='75' fill='%2399f6e4'/><path d='M255 170 l30 -30 l30 20 l30 -40' fill='none' stroke='%230f766e' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'/><circle cx='345' cy='120' r='8' fill='%230f766e'/><text x='50%25' y='285' font-family='sans-serif' font-size='22' font-weight='bold' fill='%23115e59' text-anchor='middle'>CatchFit Mobile App</text></svg>" 
+              alt="CatchFit Project Preview" 
+            />
+          </div>
+          <div class="project-content">
+            <span class="project-role">UI Designer</span>
+            <h3 class="project-title">CatchFit</h3>
+            <p class="project-desc">
+              CatchFit is an AI-powered mobile application that delivers personalized diet and exercise recommendations tailored to user goals, while boosting motivation through competitive challenges and leaderboards
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Figma</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. ORGANIZATIONAL EXPERIENCE
+       ========================================================================== -->
+  <section class="organization" id="organization">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Leadership &amp; Community</span>
+        <h2 class="section-title">Organizational Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Entry 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-org">Keluarga Mahasiswa Buddhis Dhammavaddhana</span>
+              <span class="timeline-period">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Jan 2025 - Dec 2026
+              </span>
+            </div>
+            <h3 class="timeline-role">Activist of Dhamma and Education</h3>
+            <div class="timeline-skills">
+              <span class="timeline-skill-label">Skills:</span>
+              <span class="timeline-skill-pill">Time Management</span>
+              <span class="timeline-skill-pill">Teamwork</span>
+              <span class="timeline-skill-pill">Communication</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-org">Keluarga Mahasiswa Buddhis Dhammavaddhana</span>
+              <span class="timeline-period">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Feb 2025 - Jul 2025
+              </span>
+            </div>
+            <h3 class="timeline-role">Staff of Logistic and Equipment - Waisak Puja 2569 B.E./2025 x HUT KMBD XXXVI</h3>
+            <div class="timeline-skills">
+              <span class="timeline-skill-label">Skills:</span>
+              <span class="timeline-skill-pill">Teamwork</span>
+              <span class="timeline-skill-pill">Time Management</span>
+              <span class="timeline-skill-pill">Equipment Management</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-org">Keluarga Mahasiswa Buddhis Dhammavaddhana</span>
+              <span class="timeline-period">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Aug 2025 - Nov 2025
+              </span>
+            </div>
+            <h3 class="timeline-role">Staff of Logistic and Equipment - DV SOS 2025</h3>
+            <div class="timeline-skills">
+              <span class="timeline-skill-label">Skills:</span>
+              <span class="timeline-skill-pill">Teamwork</span>
+              <span class="timeline-skill-pill">Time Management</span>
+              <span class="timeline-skill-pill">Equipment Management</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-org">Keluarga Mahasiswa Buddhis Dhammavaddhana</span>
+              <span class="timeline-period">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Jan 2026 - Present
+              </span>
+            </div>
+            <h3 class="timeline-role">Staff of Dhamma &amp; Education</h3>
+          </div>
+        </div>
+
+        <!-- Entry 5 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-org">Keluarga Mahasiswa Buddhis Dhammavaddhana</span>
+              <span class="timeline-period">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Feb 2026 - Jul 2026
+              </span>
+            </div>
+            <h3 class="timeline-role">Head of Logistic Division - Waisak Puja 2570 B.E./2026 x HUT KMBD XXXVII</h3>
+            <div class="timeline-skills">
+              <span class="timeline-skill-label">Skills:</span>
+              <span class="timeline-skill-pill">Team Leadership</span>
+              <span class="timeline-skill-pill">Time Management</span>
+              <span class="timeline-skill-pill">Teamwork</span>
+              <span class="timeline-skill-pill">Communication</span>
+              <span class="timeline-skill-pill">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. CONTACT & FOOTER
+       ========================================================================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+
+      <!-- Contact Form Box -->
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="name@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          Send Message
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+
+        <div class="form-status" id="formStatus">
+          Thank you! Your message has been sent successfully.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Kingsley Kie</h3>
+          <p>Front-end Web Developer &amp; UI Designer</p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/kingsley-kie" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.65 1.65 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.66 1.66 0 0 0 1.66-1.66c0-.92-.74-1.66-1.66-1.66Z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+            GitHub
+          </a>
+          <a href="mailto:kingsleykie12@gmail.com" class="social-link">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Email
+          </a>
+          <a href="tel:+6288279169285" class="social-link">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            Contact
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kingsley Kie. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
