@@ -77,7 +77,7 @@ export default function Home() {
           <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
         </svg>
       ),
-      skills: ['VS Code', 'Figma', 'Vercel', 'Canva', 'Microsoft Office'],
+      skills: ['VS Code', 'Figma', 'Vercel', 'Git', 'GitHub', 'Canva', 'Microsoft Office'],
     },
   ];
 
@@ -175,7 +175,8 @@ export default function Home() {
 
           <div className={styles.navActions}>
             <a
-              href="#contact"
+              href="/CV_KingsleyKie.pdf"
+              download="CV_KingsleyKie.pdf"
               className={`${styles.btn} ${styles.btnPrimary} ${styles.navBtn}`}
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
