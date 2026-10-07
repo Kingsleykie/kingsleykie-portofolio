@@ -6,8 +6,6 @@ import styles from './page.module.css';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const toggleMenu = () => {
     setMobileMenuOpen((prev) => !prev);
@@ -15,22 +13,6 @@ export default function Home() {
 
   const closeMenu = () => {
     setMobileMenuOpen(false);
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (formData.name && formData.email && formData.message) {
-      setFormSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
-      setTimeout(() => {
-        setFormSubmitted(false);
-      }, 5000);
-    }
   };
 
   const skillCategories = [
@@ -488,80 +470,97 @@ export default function Home() {
               <div className={styles.sectionUnderline}></div>
             </div>
 
-            <div className={styles.contactFormOnly}>
-              {/* Contact Form */}
-              <div className={styles.formWrapper}>
-                <form className={styles.contactForm} onSubmit={handleSubmit}>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="name" className={styles.formLabel}>
-                      Your Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                      placeholder="e.g. Kingsley Kie"
-                      className={styles.formInput}
-                    />
-                  </div>
+            <div className={styles.contactLinksGrid}>
 
-                  <div className={styles.formGroup}>
-                    <label htmlFor="email" className={styles.formLabel}>
-                      Your Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      placeholder="e.g. name@example.com"
-                      className={styles.formInput}
-                    />
-                  </div>
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/6288279169285"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.contactLinkCard}
+              >
+                <div className={styles.contactLinkIcon} style={{ background: '#25D366' }}>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.858L.057 23.714a.5.5 0 0 0 .63.63l5.858-1.476A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.655-.502-5.18-1.378l-.371-.215-3.843.969.984-3.842-.234-.386A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+                  </svg>
+                </div>
+                <div className={styles.contactLinkInfo}>
+                  <span className={styles.contactLinkLabel}>WhatsApp</span>
+                  <span className={styles.contactLinkValue}>+62 882-7916-9285</span>
+                </div>
+                <svg className={styles.contactLinkArrow} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
 
-                  <div className={styles.formGroup}>
-                    <label htmlFor="message" className={styles.formLabel}>
-                      Your Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={5}
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      required
-                      placeholder="Write your message or project inquiry here..."
-                      className={styles.formTextarea}
-                    ></textarea>
-                  </div>
+              {/* LinkedIn */}
+              <a
+                href="https://linkedin.com/in/kingsley-kie"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.contactLinkCard}
+              >
+                <div className={styles.contactLinkIcon} style={{ background: '#0A66C2' }}>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.65 1.65 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.66 1.66 0 0 0 1.66-1.66c0-.92-.74-1.66-1.66-1.66Z"/>
+                  </svg>
+                </div>
+                <div className={styles.contactLinkInfo}>
+                  <span className={styles.contactLinkLabel}>LinkedIn</span>
+                  <span className={styles.contactLinkValue}>linkedin.com/in/kingsley-kie</span>
+                </div>
+                <svg className={styles.contactLinkArrow} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
 
-                  <button
-                    type="submit"
-                    className={`${styles.btn} ${styles.btnPrimary} ${styles.formSubmitBtn}`}
-                  >
-                    Send Message
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <line x1="22" y1="2" x2="11" y2="13"></line>
-                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                    </svg>
-                  </button>
+              {/* GitHub */}
+              <a
+                href="https://github.com/Kingsleykie"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.contactLinkCard}
+              >
+                <div className={styles.contactLinkIcon} style={{ background: '#24292f' }}>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+                  </svg>
+                </div>
+                <div className={styles.contactLinkInfo}>
+                  <span className={styles.contactLinkLabel}>GitHub</span>
+                  <span className={styles.contactLinkValue}>github.com/Kingsleykie</span>
+                </div>
+                <svg className={styles.contactLinkArrow} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
 
-                  {formSubmitted && (
-                    <div className={styles.formSuccessMessage}>
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                      </svg>
-                      Thank you! Your message has been received successfully.
-                    </div>
-                  )}
-                </form>
-              </div>
+              {/* Email */}
+              <a
+                href="mailto:kingsleykie12@gmail.com"
+                className={styles.contactLinkCard}
+              >
+                <div className={styles.contactLinkIcon} style={{ background: '#EA4335' }}>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div className={styles.contactLinkInfo}>
+                  <span className={styles.contactLinkLabel}>Email</span>
+                  <span className={styles.contactLinkValue}>kingsleykie12@gmail.com</span>
+                  <span className={styles.contactLinkValueAlt}>kingsley.kie@binus.ac.id</span>
+                </div>
+                <svg className={styles.contactLinkArrow} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+
             </div>
           </div>
         </section>

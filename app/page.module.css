@@ -938,30 +938,91 @@
   box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.18);
 }
 
-.formInput::placeholder,
-.formTextarea::placeholder {
-  color: #94a3b8;
+/* ==========================================================================
+   CONTACT LINKS (new — replaces form)
+   ========================================================================= */
+
+.contactLinksGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
-.formSubmitBtn {
-  width: 100%;
-  padding: 0.85rem;
-  font-size: 1rem;
-  margin-top: 0.5rem;
-}
-
-.formSuccessMessage {
+.contactLinkCard {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  background-color: #ecfdf5;
-  border: 1px solid #a7f3d0;
-  color: #047857;
-  padding: 0.85rem 1.15rem;
-  border-radius: 8px;
+  gap: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1.25rem 1.25rem 1.25rem 1.1rem;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.contactLinkCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: #0284c7;
+}
+
+.contactLinkIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contactLinkInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.contactLinkLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #64748b;
+}
+
+.contactLinkValue {
   font-size: 0.875rem;
+  font-weight: 600;
+  color: #0f172a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contactLinkValueAlt {
+  font-size: 0.8rem;
   font-weight: 500;
-  margin-top: 0.5rem;
+  color: #64748b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contactLinkArrow {
+  color: #94a3b8;
+  flex-shrink: 0;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.contactLinkCard:hover .contactLinkArrow {
+  color: #0284c7;
+  transform: translate(2px, -2px);
 }
 
 /* ==========================================================================
@@ -1090,12 +1151,8 @@
     grid-template-columns: 1fr;
   }
 
-  .contactGrid {
+  .contactLinksGrid {
     grid-template-columns: 1fr;
-  }
-
-  .formWrapper {
-    padding: 1.75rem;
   }
 
   .aboutCard {
