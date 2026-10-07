@@ -85,7 +85,7 @@ export default function Home() {
     {
       title: 'Mr.Coffee',
       role: 'Front-end Developer',
-      image: '/project-mrcoffee.svg',
+      image: '/project-MrCoffee.jpg',
       description:
         'A responsive online coffee shop platform featuring an interactive homepage with top menus, ongoing promotions, a dedicated “About us” section, and a food ordering page. This system is built using standard web technologies including HTML5, CSS3, and JavaScript to optimize web performance and responsive.',
       tags: ['HTML5', 'CSS3', 'JavaScript'],
@@ -98,9 +98,9 @@ export default function Home() {
       image: '/project-cyberlearn.jpg',
       description:
         'An gamified cybersecurity learning platform concepts through interactive lessons and structured progression.',
-      tags: ['Figma'],
-      demoLink: 'https://figma.com',
-      githubLink: 'https://github.com',
+      tags: ['Figma', 'PRD'],
+      demoLink: 'https://github.com/samjoshchen/software-engineering-project-frontend',
+      githubLink: 'https://github.com/samjoshchen/software-engineering-project-frontend',
     },
     {
       title: 'CatchFit',
@@ -109,8 +109,8 @@ export default function Home() {
       description:
         'CatchFit is an AI-powered mobile application that delivers personalized diet and exercise recommendations tailored to user goals, while boosting motivation through competitive challenges and leaderboards',
       tags: ['Figma'],
-      demoLink: 'https://figma.com',
-      githubLink: 'https://github.com',
+      demoLink: 'https://www.figma.com/proto/af0fdW6SdlmjmLoKi0wQg9/CatchFit-Figma?node-id=1-7&p=f&t=Hkdd5t21Mxb5kWVR-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A7',
+      githubLink: 'https://www.figma.com/proto/af0fdW6SdlmjmLoKi0wQg9/CatchFit-Figma?node-id=1-7&p=f&t=Hkdd5t21Mxb5kWVR-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A7',
     },
   ];
 
