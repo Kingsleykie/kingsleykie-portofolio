@@ -175,8 +175,8 @@ export default function Home() {
 
           <div className={styles.navActions}>
             <a
-              href="/CV_KingsleyKie.pdf"
-              download="CV_KingsleyKie.pdf"
+              href="/KINGSLEYKIE.pdf"
+              download="KINGSLEYKIE.pdf"
               className={`${styles.btn} ${styles.btnPrimary} ${styles.navBtn}`}
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
